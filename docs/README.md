@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /image/1.jpeg
+heroImage: /images/1.jpeg
 actionText: 快速开始 →
 actionLink: /posts/index/nav.md
 features:

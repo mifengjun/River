@@ -35,14 +35,14 @@
         </div>
       </div>
       <div class="option-box" v-on:mouseover="showToc($event)" v-on:mouseout="hideToc($event)">
-        <img src="/images/system/wechat.png" class="nozoom" />
+        <img src="/images/system/mobi.png" width="25px" class="nozoom" />
         <span class="show-txt">手机看</span>
         <div class="toc-container">
             <div class="pos-box">
               <div class="icon-arrow"></div>
               <div class="scroll-box" style="text-align:center" >
                 <span style="font-size:0.9rem">微信扫一扫</span>
-                <img v-bind="{src: 'https://api.qrserver.com/v1/create-qr-code/?data=https://bugstack.cn'+this.$route.fullPath }" height="180px" style="margin:10px;"/>
+                <img v-bind="{src: 'https://api.qrserver.com/v1/create-qr-code/?data=https://tama.wiki'+this.$route.fullPath }" height="180px" style="margin:10px;"/>
                 可以<b>手机看</b>或分享至<b>朋友圈</b>
               </div>
             </div>
@@ -54,66 +54,36 @@
 <!--      </div>-->
 
       <div class="option-box" @click="$emit('toggle-sidebar-force')">
-        <img src="/images/system/toggle.png" width="30px" class="nozoom" />
+        <img src="/images/system/toggle.png" width="25px" class="nozoom" />
         <span class="show-txt">左栏</span>
       </div>
 
-      <div class="option-box" v-on:mouseout="hideToc($event)" v-on:mouseover="showToc($event)">
-        <img class="nozoom" src="/images/system/xingqiu.png" width="25px" />
-        <span class="show-txt">星球</span>
-        <div class="toc-container">
-          <div class="pos-box">
-            <div class="icon-arrow"></div>
-            <div class="scroll-box" style="text-align:center" >
-              <span style="font-size:0.8rem;font-weight:bold;">实战项目<span style="font-size:8px;color:red;">「DDD+RPC分布式抽奖系统」</span>、专属小册、问题解答、简历指导、架构图稿、视频课程</span>
-              <img height="180px" src="/images/personal/xingqiu.png" style="margin:10px;"/>
-              <b>知识星球</b>：码农会锁
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="option-box" v-on:mouseover="showToc($event)" v-on:mouseout="hideToc($event)">
-        <img class="nozoom" src="/images/system/wexin4.png" width="25px" />
+        <img class="nozoom" src="/images/system/talk.png" width="25px" />
         <span class="show-txt">交流群</span>
         <div class="toc-container">
             <div class="pos-box">
               <div class="icon-arrow"></div>
               <div class="scroll-box" style="text-align:center" >
-                <span style="font-size:0.8rem;font-weight:bold;">添加小傅哥微信<span style="color:red;">(fustack)</span>进虫洞栈学习交流圈「无任何套路」</span>
-                <img src="/images/personal/fustack.png" height="180px" style="margin:10px;"/>
+                <span style="font-size:0.8rem;font-weight:bold;">添加我的微信进群交流</span>
+                <img src="/images/personal/wechat_qrcode.png" height="180px" style="margin:10px;"/>
                 PS：添加时请备注<b>加群</b>，谢谢！
               </div>
             </div>
         </div>
       </div>
 
-      <div class="option-box" v-on:mouseover="showToc($event)" v-on:mouseout="hideToc($event)">
-        <img class="nozoom" src="/images/system/download-2.png" width="25px" />
-        <span class="show-txt">下资料</span>
-        <div class="toc-container">
-            <div class="pos-box">
-              <div class="icon-arrow"></div>
-              <div class="scroll-box" style="text-align:center" >
-                <span style="font-size:0.8rem;font-weight:bold;">扫描公众号，回复<span style="color:red;">“网盘学习资料”</span>下载<span style="color:red;">100GB+</span>大学到毕业分阶段学习技术资料「无任何套路」</span>
-                <img src="/images/personal/qrcode.png" height="180px" style="margin:10px;"/>
-                <b>公众号:</b> bugstack虫洞栈
-              </div>
-            </div>
-        </div>
-      </div>
 
       <div class="option-box" v-on:mouseover="showToc($event)" v-on:mouseout="hideToc($event)">
-        <img class="nozoom" src="/images/system/heart-1.png" width="25px" />
+        <img class="nozoom" src="/images/system/guli.png" width="25px" />
         <span class="show-txt">支持我</span>
         <div class="toc-container">
             <div class="pos-box">
               <div class="icon-arrow"></div>
               <div class="scroll-box" style="text-align:center" >
                 <span style="font-size:0.8rem;font-weight:bold;">鼓励/支持/赞赏我</span>
-                <img height="180px" src="/images/personal/encourage-head.png" style="margin:5px;"/>
-                <br>1. 不靠它生存但仍希望得到你的鼓励；
-                <br>2. 时刻警醒自己保持技术人的初心，沉淀，分享，成长；
+                <img height="180px" src="/images/personal/guli.png" style="margin:5px;"/>
+                <br>鼓励鼓励
               </div>
             </div>
         </div>
@@ -121,13 +91,13 @@
 
       <div class="option-box" v-if="prev" style="padding-left:2px;text-align:center;" v-bind:title="prev.title">
           <router-link v-if="prev" :to="prev.path" >
-            <img src="/images/system/pre2.png" width="30px" class="nozoom" />
+            <img src="/images/system/left.png" width="30px" class="nozoom" />
             <span class="show-txt">上一篇</span>
           </router-link>
       </div>
       <div class="option-box" v-if="next" style="padding-left:2px;text-align:center;" v-bind:title="next.title">
           <router-link v-if="next" :to="next.path" >
-            <img src="/images/system/next2.png" width="30px" class="nozoom" />
+            <img src="/images/system/right.png" width="30px" class="nozoom" />
             <span class="show-txt">下一篇</span>
           </router-link>
       </div>
