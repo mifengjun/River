@@ -33,7 +33,7 @@ module.exports = {
       "/": {
           lang: "zh-CN",
           title: "River",
-          description: "副标题"
+          description: "积少成多，汇聚江河。"
       }
   },
   head: [
@@ -41,13 +41,13 @@ module.exports = {
       ["link", {rel: "icon", href: `/favicon.ico`}],
       // meta
       ["meta", {name: "robots", content: "all"}],
-      ["meta", {name: "author", content: "小傅哥"}],
+      ["meta", {name: "author", content: "米凤君"}],
       ["meta", {"http-equiv": "Cache-Control", content: "no-cache, no-store, must-revalidate"}],
       ["meta", {"http-equiv": "Pragma", content: "no-cache"}],
       ["meta", {"http-equiv": "Expires", content: "0"}],
       ["meta", {
           name: "keywords",
-          content: "bugstack 虫洞栈, 重学Java设计模式, 字节码编程, 中间件, Spring, Java基础, 面经手册"
+          content: "river,米凤君,设计模式,虚拟机"
       }],
       ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
       ['script',
@@ -74,10 +74,10 @@ module.exports = {
           `
             var _hmt = _hmt || [];
             (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?0b31b4c146bf7126aed5009e1a4a11c8";
-              var s = document.getElementsByTagName("script")[0];
-              s.parentNode.insertBefore(hm, s);
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?e0d604d5dea105bdeffb878e1b5c2b0f";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
             })();
           `
       ]
@@ -131,7 +131,7 @@ module.exports = {
       ['vuepress-plugin-code-copy', {
           align: 'bottom',
           color: '#3eaf7c',
-          successText: '@小傅哥: 代码已经复制到剪贴板'
+          successText: '@mi: 代码已经复制到剪贴板'
       }],
       // see: https://github.com/tolking/vuepress-plugin-img-lazy
       ['img-lazy', {}],
