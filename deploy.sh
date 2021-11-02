@@ -20,7 +20,7 @@ gitUrl=https://mifengjun:${GITHUB_TOKEN}@github.com/mifengjun/mifengjun.github.i
 echo $gitUrl
 
 git config --global user.name "mifengjun"
-git config --global user.email "522622782@qq.com"
+git config --global user.email "lvgorice@gmail.com"
 git config --global init.defaultBranch master
 
 git init
