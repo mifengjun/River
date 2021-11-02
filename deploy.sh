@@ -29,7 +29,7 @@ git commit -m 'github action automaic deploy'
 
 
 
-echo 'push github.io'
+echo '>>> push github.io'
 # 如果发布到 https://<USERNAME>.github.io
 git push -f $gitUrl master
 
