@@ -17,6 +17,8 @@ echo 'tama.wiki' > CNAME
 
 gitUrl=https://mifengjun:${GITHUB_TOKEN}@github.com/mifengjun/mifengjun.github.io.git
 
+echo $gitUrl
+
 git init
 git add -A
 git commit -m 'deploy'
