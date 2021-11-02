@@ -21,8 +21,10 @@ echo $gitUrl
 
 git config --global user.name "mifengjun"
 git config --global user.email "522622782@qq.com"
+git config --global init.defaultBranch master
 
 git init
+
 git add -A
 git commit -m 'github action automaic deploy'
 
