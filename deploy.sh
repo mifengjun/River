@@ -17,7 +17,6 @@ echo 'tama.wiki' > CNAME
 
 gitUrl=https://mifengjun:${GITHUB_TOKEN}@github.com/mifengjun/mifengjun.github.io.git
 
-echo $gitUrl
 
 git config --global user.name "mifengjun"
 git config --global user.email "lvgorice@gmail.com"
@@ -30,7 +29,7 @@ git commit -m 'github action automaic deploy'
 
 
 
-
+echo 'push github.io'
 # 如果发布到 https://<USERNAME>.github.io
 git push -f $gitUrl master
 
