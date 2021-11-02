@@ -19,11 +19,15 @@ gitUrl=https://mifengjun:${GITHUB_TOKEN}@github.com/mifengjun/mifengjun.github.i
 
 echo $gitUrl
 
-git init
-git add -A
-git commit -m 'deploy'
 git config --global user.name "mifengjun"
 git config --global user.email "522622782@qq.com"
+
+git init
+git add -A
+git commit -m 'github action automaic deploy'
+
+
+
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f $gitUrl master
