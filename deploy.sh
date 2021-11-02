@@ -15,7 +15,6 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 echo 'tama.wiki' > CNAME
 
-// GITHUB_TOKEN
 gitUrl = https://mifengjun:${GITHUB_TOKEN}@github.com/mifengjun/mifengjun.github.io.git
 
 git init
