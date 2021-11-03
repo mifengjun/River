@@ -105,7 +105,7 @@
 
     <slot name="middle"/>
 
-    <div class="page-side-sitemap">
+    <!-- <div class="page-side-sitemap">
       <div class="option-box" v-on:mouseover="showSitemap($event)" v-on:mouseout="hideSitemap($event)">
         <img src="/images/system/sitemap.png" class="nozoom img" />
         <span class="show-txt">站点图</span>
@@ -118,7 +118,7 @@
             <SiteMap />
         </div>
       </div>
-    </div>
+    </div> -->
 
     <PageSidebarBackToTop />
 

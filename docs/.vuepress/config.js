@@ -32,7 +32,7 @@ module.exports = {
   locales: {
       "/": {
           lang: "zh-CN",
-          title: "River",
+          title: "River 江河",
           description: "积少成多，汇聚江河。"
       }
   },
@@ -165,7 +165,7 @@ module.exports = {
       docsBranch: 'master',
       logo: "/favicon.ico",
       editLinks: true,
-      sidebarDepth: 0,
+      sidebarDepth: 2,
       //smoothScroll: true,
       locales: {
           "/": {
